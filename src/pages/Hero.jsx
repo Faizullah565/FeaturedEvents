@@ -53,18 +53,18 @@ const Hero = () => {
                 />
                 <div className="image-overlay"></div>
               </div>
-              <h4 className="event-title">TechFest 2025</h4>
+              <h4 className="event-title">TechFest 2026</h4>
               <div className="event-details">
                 <p className="mb-2">
                   <i className="far fa-calendar me-2 text-primary"></i>
-                  <strong>15th September 2025</strong>
+                  <strong>5th January 2026</strong>
                 </p>
                 <p className="mb-3">
                   <i className="fas fa-map-marker-alt me-2 text-primary"></i>
                   <strong>San Francisco Convention Center</strong>
                 </p>
               </div>
-              <Link to="/event/techfest-2025" className="btn btn-primary-custom mt-2">
+              <Link to="/event/techfest-2026" className="btn btn-primary-custom mt-2">
                 <i className="fas fa-ticket-alt me-2"></i>Get Tickets
               </Link>
             </div>

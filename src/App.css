@@ -626,8 +626,7 @@ footer a:hover {
   box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
 }
 
-/* Smooth collapse transition */
-/* ✅ Only apply transition when navbar is collapsed (mobile) */
+/* Smooth collapse transition when navbar is collapsed (mobile) */
 @media (max-width: 991px) {
   .custom-collapse {
     max-height: 0;
@@ -636,7 +635,7 @@ footer a:hover {
   }
 
   .custom-collapse.show {
-    max-height: 500px; /* adjust depending on your menu height */
+    max-height: 400px; /* adjust depending on our menu height */
   }
 }
 
