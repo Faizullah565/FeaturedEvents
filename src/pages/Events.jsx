@@ -21,7 +21,7 @@ const Events = () => {
   return (
     <section id="events" className="pt-5">
       <div className="container pt-5">
-        <h2 className="text-center section-title">Upcoming Events</h2>
+        <h2 className="text-center section-title">Featured Events</h2>
         <p className="text-center lead mb-2 fw-bold">Discover amazing events that match your interests</p>
 
         <div className="row mb-4">

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="py-5">
       <div className="container py-5">
-        <h2 className="text-center section-title">About EventSphere</h2>
+        <h2 className="text-center section-title">About FeaturedEvents</h2>
         <p className="text-center lead mb-5">Discover the story behind our platform</p>
         
         <div className="row">
