@@ -85,3 +85,18 @@ To build a responsive and interactive webpage that allows users to discover upco
 
 ### Footer
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1a62c7e3-5794-4362-b64a-4b5f55bd2709" />
+
+## How to Run the Project Locally
+
+```run
+# Clone the repository
+git clone https://github.com/Faizullah565/FeaturedEvents.git
+
+# Navigate to project directory
+cd FeaturedEvents
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
