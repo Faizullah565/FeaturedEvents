@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--darker-color) 0%, var(--dark-color) 100%);
+  background: linear-gradient(135deg, var(--dark-color) 30%, var(--darker-color)100%);
   color: var(--text-primary);
   min-height: 100vh;
   background-attachment: fixed;
@@ -172,7 +172,7 @@ p, li, .card-text {
 
 .section-title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-weight: 800;
   font-size: 2.5rem;
   text-align: center;
@@ -342,68 +342,7 @@ footer a:hover {
   background-clip: text;
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
 
-.hero-buttons {
-  margin-bottom: 2rem;
-}
-
-.hero-features {
-  margin-top: 2rem;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  background: var(--glass-bg);
-  padding: 8px 16px;
-  border-radius: 25px;
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-}
-
-.feature-item span {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.hero-card {
-  position: relative;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  background: linear-gradient(45deg, var(--glass-bg), rgba(255, 255, 255, 0.1));
-}
-
-.hero-card:hover {
-  border: 2px solid var(--primary-light);
-  transform: translateY(-5px) scale(1.02);
-}
-
-.event-badge {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.8rem;
-  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
-}
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
 
 .image-overlay {
   position: absolute;
@@ -414,21 +353,6 @@ footer a:hover {
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 
-.event-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 1rem 0;
-  color: var(--text-primary);
-}
-
-.event-details p {
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-}
-
-.event-details i {
-  width: 20px;
-}
 
 /* Responsive adjustments for hero section */
 @media (max-width: 992px) {
@@ -468,116 +392,9 @@ footer a:hover {
   100% { transform: scale(1); }
 }
 
-.hero-card:hover .image-container img {
-  animation: pulse 2s infinite;
-}
 
-/* Add these styles to your App.css */
 
-.event-detail-card {
-  border: 2px solid transparent;
-  background: linear-gradient(45deg, var(--glass-bg), rgba(255, 255, 255, 0.1));
-  backdrop-filter: blur(20px);
-}
 
-.event-detail-card:hover {
-  border: 2px solid var(--primary-light);
-  transform: translateY(-2px);
-}
-
-.event-header {
-  text-align: center;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid var(--glass-border);
-}
-
-.event-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-.event-meta {
-  justify-content: center;
-  gap: 2rem;
-}
-
-.meta-item {
-  display: flex;
-  align-items: center;
-  background: var(--glass-bg);
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-}
-
-.event-image-container {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.event-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.event-image-container:hover .event-image {
-  transform: scale(1.02);
-}
-
-.event-description .lead {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: var(--text-secondary);
-}
-
-.event-highlights {
-  background: var(--glass-bg-dark);
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid var(--glass-border);
-}
-
-.event-highlights h5 {
-  color: var(--text-primary);
-  font-weight: 700;
-}
-
-.event-highlights li {
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.event-location {
-  padding: 2rem;
-  background: var(--glass-bg-dark);
-  border-radius: 12px;
-  border: 1px solid var(--glass-border);
-}
-
-.event-cta {
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, var(--glass-bg-dark), rgba(42, 42, 114, 0.8));
-  border-radius: 16px;
-  border: 2px solid var(--primary-light);
-}
-
-.event-cta h4 {
-  color: var(--text-primary);
-  font-weight: 700;
-}
-
-.event-cta p {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -635,7 +452,7 @@ footer a:hover {
   }
 
   .custom-collapse.show {
-    max-height: 400px; /* adjust depending on our menu height */
+    max-height: 500px; /* adjust depending on our menu height */
   }
 }
 

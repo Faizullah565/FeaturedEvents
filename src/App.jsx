@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Footer from './components/Footer';
 import './App.css';
-
+import { ToastContainer} from 'react-toastify';
 function App() {
   return (
     <Router>
@@ -30,6 +30,7 @@ function App() {
         </main>
         <Footer />
       </div>
+      <ToastContainer />
     </Router>
   );
 }

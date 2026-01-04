@@ -2,12 +2,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { eventsData } from '../data/eventsData';
-
+import '../styles/Events.css'
+import { Col, Row } from 'react-bootstrap';
 const Events = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
-  
-  const filteredEvents = eventsData.filter(event => 
+
+  const filteredEvents = eventsData.filter(event =>
     event.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     event.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
     event.venue.toLowerCase().includes(searchTerm.toLowerCase())
@@ -18,23 +19,24 @@ const Events = () => {
   };
 
   return (
-    <section id="events" className="py-5">
-      <div className="container py-5">
+    <section id="events" className="pt-5">
+      <div className="container pt-5">
         <h2 className="text-center section-title">Upcoming Events</h2>
-        <p className="text-center lead mb-5">Discover amazing events that match your interests</p>
-        
+        <p className="text-center lead mb-2 fw-bold">Discover amazing events that match your interests</p>
+
         <div className="row mb-4">
           <div className="col-md-6 mx-auto">
-            <input 
-              type="text" 
-              className="form-control search-bar-custom" 
-              placeholder="Search events by name, venue, or description..." 
+            <input
+
+              type="text"
+              className="form-control search-bar-custom"
+              placeholder="Search events by name, venue, or description..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
         </div>
-        
+
         <div className="row g-4">
           {filteredEvents.map((event, index) => (
             <div key={event.id} className={`col-md-6 col-lg-4 ${index < 3 ? 'animate-fadeIn delay-' + (index + 1) : ''}`}>
@@ -45,12 +47,19 @@ const Events = () => {
                   <p className="card-text"><i className="far fa-calendar me-2"></i>{event.date}</p>
                   <p className="card-text"><i className="fas fa-map-marker-alt me-2"></i>{event.venue}</p>
                   <p className="card-text">{event.description}</p>
-                  <button 
-                    className="btn btn-primary-custom"
+                  <p className='event-cards-buttons'>
+                  <button
+                    className="btn btn-outline-info"
                     onClick={() => handleEventClick(event.id)}
                   >
                     Learn More
                   </button>
+                  <button
+                    className="btn btn-outline-primary"
+                    >
+                    Register
+                  </button>
+                    </p>
                 </div>
               </div>
             </div>

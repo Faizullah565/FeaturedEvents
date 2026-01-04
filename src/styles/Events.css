@@ -1,0 +1,100 @@
+/* Events Listing Styles */
+
+
+
+/* Section title reuse (agar already global nahi hai) */
+.events-section .section-title {
+  margin-bottom: 1rem;
+}
+
+/* Event Card */
+
+.event-card {
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  background: var(--glass-bg-dark);
+}
+
+.event-card:hover {
+  transform: translateY(-1px) !important;
+}
+
+.event-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover img {
+  transform: scale(1);
+}
+
+.event-card .card-body {
+  background: transparent;
+  color: var(--text-primary);
+  /* padding: 1.5rem; */
+}
+
+.event-card .card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.event-card .card-text {
+  color: black;
+  /* margin-bottom: 0.5rem; */
+}
+
+/* Search bar (Events page specific) */
+
+.events-search {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.search-bar-custom {
+  background: transparent !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 50px;
+  padding: 12px 24px !important;
+  color: var(--text-primary) !important;
+  font-size: 1rem !important;
+}
+
+.search-bar-custom::placeholder {
+  color: white !important;
+}
+
+.search-bar-custom:focus {
+  /* box-shadow: 0 0 0 0.3rem rgba(108, 99, 255, 0.25); */
+  border-color: var(--primary-light);
+  background: var(--glass-bg);
+  color: var(--text-primary);
+}
+
+/* Animation */
+
+.event-card {
+  animation: fadeIn 0.8s ease forwards !important;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .events-section {
+    padding: 60px 0;
+  }
+
+  .event-card img {
+    height: 180px;
+  }
+}
+.event-cards-buttons{
+  display: flex;
+  justify-content: space-between;
+}

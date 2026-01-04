@@ -1,0 +1,41 @@
+/* Navbar Styles */
+
+.navbar-custom {
+  background: rgba(26, 26, 78, 0.95) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--primary-light) !important;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+}
+
+/* Mobile collapse animation */
+@media (max-width: 991px) {
+  .custom-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .custom-collapse.show {
+    max-height: 400px; /* adjust if needed */
+  }
+}
+
+.featured-events-logo{
+  width: 80px;
+  height: 60px;
+}

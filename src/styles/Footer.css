@@ -1,0 +1,43 @@
+/* Footer Styles */
+
+footer {
+  background: var(--glass-bg-dark);
+  padding: 50px 0 25px;
+  margin-top: 100px;
+  backdrop-filter: blur(10px);
+}
+
+footer h5 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary-light);
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+}
+
+.social-icon:hover {
+  background: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+}

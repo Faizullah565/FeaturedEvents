@@ -1,5 +1,7 @@
 // components/Contact.js
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import '../styles/Contact.css'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +20,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Form submission logic would go here
-    alert('Thank you for your message! We will get back to you soon.');
+    toast.success('Thank you for your message! We will get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -29,11 +31,11 @@ const Contact = () => {
         <p className="text-center lead mb-5">Have questions? Get in touch with our team</p>
         
         <div className="row">
-          <div className="col-lg-6 mb-5 mb-lg-0">
-            <div className="glass-card p-4 h-100">
-              <h4 className="mb-4">Send us a Message</h4>
+          <div className="col-lg-6 mb-1 mb-lg-0">
+            <div className="glass-card p-3 h-70">
+              <h4 className="mb-2">Send us a Message</h4>
               <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="mb-3">
+                <div className="mb-1">
                   <label htmlFor="name" className="form-label">Your Name</label>
                   <input 
                     type="text" 
@@ -42,7 +44,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="John Doe" 
+                    placeholder="Faizullah balghari" 
                     required
                   />
                 </div>
@@ -72,7 +74,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary-custom">Send Message</button>
+                <button type="submit" className="btn btn-primary">Send Message</button>
               </form>
             </div>
           </div>
@@ -88,7 +90,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h6 className="mb-0">Address</h6>
-                  <p className="mb-0">123 Event Street, City, Country</p>
+                  <p className="mb-0">8B G-7/4, Islamabad, Pakistan</p>
                 </div>
               </div>
               
@@ -98,7 +100,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h6 className="mb-0">Phone</h6>
-                  <p className="mb-0">+1 (123) 456-7890</p>
+                  <p className="mb-0">+92 (123) 456-7890</p>
                 </div>
               </div>
               
@@ -108,7 +110,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h6 className="mb-0">Email</h6>
-                  <p className="mb-0">info@eventsphere.com</p>
+                  <p className="mb-0">info@sharedevents.com</p>
                 </div>
               </div>
               
